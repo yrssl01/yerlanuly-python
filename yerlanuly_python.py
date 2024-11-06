@@ -16,8 +16,8 @@ else:
 
 
 array = list(map(int, input().split()))
-multiplies_of_3 = [x for x in array if x % 3 == 0]
-print(*multiplies_of_3)
+multiplies_of_three = [x for x in array if x % 3 == 0]
+print(*multiplies_of_three)
 
 
 # Task 2
