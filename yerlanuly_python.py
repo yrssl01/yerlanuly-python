@@ -1,23 +1,60 @@
 # Task 1
 
+def task1_1():
+    try:
+        num = input("Enter your number: ")
 
-number = int(input())
+        num = float(num)
 
-if number > 7:
-    print("Hello")
+        if num > 7:
+            print("Hello")
+        elif num < 7:
+            print("Your number is less than 7, Bye!")
+        else:
+            print("Your number is equal to 7")
+
+    except ValueError:
+        print(f"Invalid input: {num}. Please enter a valid number!")
 
 
-name = input()
+def task1_2():
+    try:
+        name = input("Enter your name: ")
 
-if name == "John":
-    print("Hello, John")
-else:
-    print("There is no such name")
+        if name.lower() == 'john':
+            print("Hello, John!")
+        else:
+            print("There is no such name!")
+
+    except Exception as e:
+        print(f"We have problem: {e}")
 
 
-array = list(map(int, input().split()))
-multiplies_of_three = [x for x in array if x % 3 == 0]
-print(*multiplies_of_three)
+def task1_3():
+    try:  
+        array = input("Enter list of numbers separated by spaces:\n").split()
+        numbers = [float(x) for x in array]
+        multiples_of_three = [x for x in numbers if x % 3 == 0]
+        
+        if multiples_of_three:
+            print("Multiples of 3: ", multiples_of_three)
+        else:
+            print("There are no multiples of 3 in your entered numbers")
+
+    except ValueError:
+        print(f"Invalid input: {array}.\nPlease enter valid numbers separated by spaces!")
+    except Exception as e:
+        print(f"We have problem: {e}")
+
+
+def run():
+    task1_1()
+    task1_2()
+    task1_3()
+
+
+if __name__ == "__main__":
+    run()
 
 
 # Task 2
