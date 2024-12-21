@@ -14,7 +14,7 @@ The program has been written on Python 3.10. Please ensure you are using Python 
 ## Running the program
 
 1.  Ensure that you are on the same directory where `yerlanuly_python.py` file is located.
-2.  Run the program by executing the following commands:
+2.  Run the program by executing the following commands in the terminal:
 
         python3 yerlanuly_python.py
 
